@@ -1,0 +1,36 @@
+// Fig. 6.2: GradeBook.h
+// Definition of class GradeBook that finds the maximum of three grades.
+// Member functions are defined in GradeBook.cpp
+#include <string> // program uses C++ standard string class
+
+// GradeBook class definition
+class GradeBook
+{
+public:
+   explicit GradeBook( std::string ); // initializes course name
+   void setCourseName( std::string ); // to set the course name
+   std::string getCourseName() const; // to retrieve the course name
+   void displayMessage() const; // display a welcome message
+   void inputGrades(); // input three grades from user
+   void displayGradeReport() const; // display report based on the grades
+   int maximum( int, int, int ) const; // determine max of 3 values
+private:
+   std::string courseName; // course name for this GradeBook
+   int maximumGrade; // maximum of three grades
+}; // end class GradeBook  
+
+
+/**************************************************************************
+ * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
+ * Pearson Education, Inc. All Rights Reserved.                           *
+ *                                                                        *
+ * DISCLAIMER: The authors and publisher of this book have used their     *
+ * best efforts in preparing the book. These efforts include the          *
+ * development, research, and testing of the theories and programs        *
+ * to determine their effectiveness. The authors and publisher make       *
+ * no warranty of any kind, expressed or implied, with regard to these    *
+ * programs or to the documentation contained in these books. The authors *
+ * and publisher shall not be liable in any event for incidental or       *
+ * consequential damages in connection with, or arising out of, the       *
+ * furnishing, performance, or use of these programs.                     *
+ **************************************************************************/
